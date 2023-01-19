@@ -1,8 +1,16 @@
 @import './common';
 // @import './example';
 
+// Переменные
+@import './variables';
+
+// Сброс стилей
+@import './base';
+
+// Секции
 @import './header_burger';
 @import './header_modal';
+
 @import './hero';
 @import './products';
 @import './products-modals';
@@ -12,4 +20,5 @@
 @import './customer-reviews';
 @import './сontacts';
 @import './сontacts-modals';
+
 @import './footer';

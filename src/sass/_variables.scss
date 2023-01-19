@@ -1,0 +1,29 @@
+:root {
+  // Цвета шрифтов
+  --dark-txt-color: #131313;
+  --light-txt-color: #fcfcfc;
+  --contacts-hover-txt-color: #d6936d;
+  --footer-copyright-txt-color: #7a7a7a;
+
+  // Цвета фона
+  --dark-bg-color: #84a178;
+  --light-bg-color: #fcfcfc;
+  // Карточки с продуктами
+  --product-first-color: #aec6a5;
+  --product-second-color: #efd478;
+  --product-third-color: #d6936d;
+  // Ингредиенты в модалке
+  --modal-ingredients-color: #9cbe8f;
+
+  // Дополнительные цвета
+  --default-accent-color: #f8d24e;
+  --hover-accent-color: #0a8817;
+  --disabled-accent-color: #ababab;
+
+  // Шрифты
+  --main-font: 'Montserrat', sans-serif;
+  --secondary-font: 'Seymour One', sans-serif;
+
+  // Анимация
+  --transition-dur-and-func: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
