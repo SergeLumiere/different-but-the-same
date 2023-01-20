@@ -147,14 +147,14 @@
   border: 2px solid transparent;
   border-radius: 10px;
 
-  transition: background-color 250ms --transition-dur-and-func,
-    color 250ms --transition-dur-and-func, color 250ms --transition-dur-and-func;
+  transition: background-color --transition-dur-and-func,
+    color --transition-dur-and-func, border --transition-dur-and-func;
 }
 .contacts-item-btn.locations-btn {
   background-color: var(--default-accent-color);
 
-  transition: background-color 250ms --transition-dur-and-func,
-    color 250ms --transition-dur-and-func, color 250ms --transition-dur-and-func;
+  transition: background-color --transition-dur-and-func,
+    color --transition-dur-and-func, border --transition-dur-and-func;
 }
 .contacts-item-btn.locations-btn:hover {
   background-color: var(--hover-accent-color);
@@ -170,8 +170,8 @@
   border: 2px solid var(--default-accent-color);
   background-color: transparent;
 
-  transition: background-color 250ms --transition-dur-and-func,
-    color 250ms --transition-dur-and-func, color 250ms --transition-dur-and-func;
+  transition: background-color --transition-dur-and-func,
+    color --transition-dur-and-func, border --transition-dur-and-func;
 }
 .contacts-item-btn.franchise-btn:hover {
   border: 2px solid var(--hover-accent-color);
