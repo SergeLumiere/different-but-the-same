@@ -112,6 +112,14 @@ label .products{
     content: '';
     background-image: url(../images/products/ice-cream-desktop.png);
 }
+.ice-coffee-h3::after{
+    content: '';
+    background-image: url(../images/products/ice-cream-desktop.png);
+}
+.milkshakes-h3::after{
+    content: '';
+    background-image: url(../images/products/ice-cream-desktop.png);
+}
 .label{
     display: flex;
     align-items: center;
