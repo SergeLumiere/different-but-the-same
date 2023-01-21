@@ -1,0 +1,72 @@
+.customer-reviews {
+  background-image: url(/src/images/background/background-mobile.jpg);
+  background-size: 100%, cover;
+  background-position: top 0 center;
+  padding-top: 324px;
+  padding-bottom: 393px;
+  border-top: 98px solid var(--dark-bg-color);
+}
+.swiper {
+  width: 320px;
+  //   height: 454px;
+}
+.swiper-slide-active {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.swiper-pagination-bullet-active {
+  background-color: var(--dark-bg-color);
+}
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+}
+
+.photo-emily {
+  margin: auto;
+  width: 85px;
+  height: 85px;
+}
+.review-text {
+  margin: 32px auto;
+  width: 280px;
+  padding: 35px 39px;
+  background-color: var(--dark-bg-color);
+  border-radius: 10px;
+  color: var(--text-review);
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 255%;
+  text-align: center;
+}
+.review-name {
+  margin-bottom: 12px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 186%;
+  /* or 37px */
+
+  text-align: center;
+  color: var(--review-name);
+}
+
+/* MOBILE */
+@media screen and (min-width: 320px) {
+}
+
+/* ICE-CREAM */
+@media screen and (min-width: 480px) {
+}
+
+/* TABLET */
+@media screen and (min-width: 768px) {
+}
+
+/* DESKTOP */
+@media screen and (min-width: 1200px) {
+}
