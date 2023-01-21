@@ -1,106 +1,93 @@
-<ul class="contacts-list-btn list">
-    <li class="item">
-        <!-- <button data-modal-open class="contacts-item-btn locations-btn"
+<!-- <button data-modal-open class="contacts-item-btn locations-btn"
             >Our Locations &rang;</button
         > -->
-        <div class="backdrop_map is-hidden" data-modal>
-            <div class="modal_map">
-                <h2 class="modal-title-locations">Our Locations</h2>
-                <iframe
-                    class="map"
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1270.9311980154043!2d30.533842299646146!3d50.425035357981024!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4d96f5139689b%3A0xa1f7c65300bebad1!2zR29JVDog0JrRg9GA0YHRiyDQv9GA0L7Qs9GA0LDQvNC80LjRgNC-0LLQsNC90LjRjyDQsiDQmtC40LXQstC1IHwgSVQg0JrRg9GA0YHRiw!5e0!3m2!1sen!2sde!4v1674291995053!5m2!1sen!2sde"
-                    width="448px"
-                    height="260px"
-                    style="border-radius: 10px; border: #fcfcfc"
-                    allowfullscreen=""
-                    loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-                <button id="myBtn" type="button" class="modal-submit-button-map"
-                    ><a class="modal-open-map">Our Map</a></button
-                >
-                <button type="button" class="modal-close-btn" data-modal-close>
-                    <svg class="modal-close-btn-icon">
-                        <use
-                            href="./images/icons/sprite.svg#cross-icon"></use>
-                    </svg>
-                </button>
-            </div>
-        </div>
-    </li>
-    <!-- 2 button -  form -->
-    <li class="item">
-        <!-- <button data-modal-open class="contacts-item-btn franchise-btn"
-            >Franchise &rang;</button
-        > -->
-        <div class="backdrop is-hidden" data-modal>
-            <div class="modal">
-                <h2 class="modal-title"
-                    >Thank you for your interest in owning an Ice Cream shop</h2
-                >
-                <p class="modal-title-text">
-                    Due to the overwhelming volume of franchise requests we are not
-                    accepting new franchisee applications at this time. Once the
-                    application process resumes, we will contact you for further
-                    information. Please fill out the contact information below and
-                    we will reach out for additional information. We appreciate your
-                    patience.
-                </p>
-                <form class="modal-form">
-                    <div class="personal-info"
-                        ><label for="name" class="modal-form-label"></label
-                        ><input
-                            type="text"
-                            name="name"
-                            id="name"
-                            class="modal-form-input"
-                            required
-                            pattern="{a-zA-Zа-яА-я}+$"
-                            minlength="2"
-                            placeholder="Name" />
-                    </div>
-                    <div class="personal-info"
-                        ><label for="tel" class="modal-form-label"></label
-                        ><input
-                            type="tel"
-                            name="phone"
-                            id="tel"
-                            class="modal-form-input"
-                            required
-                            pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
-                            title="xxx-xxx-xx-xx"
-                            placeholder="Phone" />
-                    </div>
-                    <div class="personal-info"
-                        ><label for="email" class="modal-form-label"></label
-                        ><input
-                            type="email"
-                            name="email"
-                            id="email"
-                            class="modal-form-input"
-                            placeholder="Email" />
-                    </div>
-                    <div class="personal-info"
-                        ><label class="modal-form-label"></label
-                        ><textarea
-                            name="user_masage"
-                            class="form-label-comment"
-                            placeholder="Comment"></textarea>
-                    </div>
-                    <button type="submit" class="modal-submit-button"
-                        >Submit</button
-                    >
-                </form>
-                <button type="submit" class="modal-close-btn" data-modal-close>
-                    <svg class="modal-close-btn-icon">
-                        <use
-                            href="./images/icons/sprite.svg#cross-icon"></use>
-                    </svg>
-                </button>
-            </div>
-        </div>
-    </li>
-</ul>
-</section>
-<!-- <script src="./ice.js"></script> -->
-</body>
-</html>
+<div class="backdrop_map is-hidden" data-modal>
+  <div class="modal_map">
+    <h2 class="modal-title-locations">Our Locations</h2>
+    <iframe
+      class="map"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1270.9311980154043!2d30.533842299646146!3d50.425035357981024!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4d96f5139689b%3A0xa1f7c65300bebad1!2zR29JVDog0JrRg9GA0YHRiyDQv9GA0L7Qs9GA0LDQvNC80LjRgNC-0LLQsNC90LjRjyDQsiDQmtC40LXQstC1IHwgSVQg0JrRg9GA0YHRiw!5e0!3m2!1sen!2sde!4v1674291995053!5m2!1sen!2sde"
+      width="448px"
+      height="260px"
+      style="border-radius: 10px; border: #fcfcfc"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+    ></iframe>
+    <button id="myBtn" type="button" class="modal-submit-button-map">
+      <a class="modal-open-map">Our Map</a>
+    </button>
+    <button type="button" class="modal-close-btn" data-modal-close>
+      <svg class="modal-close-btn-icon">
+        <use href="./images/icons/sprite.svg#cross-icon"></use>
+      </svg>
+    </button>
+  </div>
+</div>
+<!-- 2 button -  form -->
+<div class="backdrop is-hidden" data-modal>
+  <div class="modal">
+    <h2 class="modal-title">
+      Thank you for your interest in owning an Ice Cream shop
+    </h2>
+    <p class="modal-title-text">
+      Due to the overwhelming volume of franchise requests we are not accepting
+      new franchisee applications at this time. Once the application process
+      resumes, we will contact you for further information. Please fill out the
+      contact information below and we will reach out for additional
+      information. We appreciate your patience.
+    </p>
+    <form class="modal-form">
+      <div class="personal-info">
+        <label for="name" class="modal-form-label"></label
+        ><input
+          type="text"
+          name="name"
+          id="name"
+          class="modal-form-input"
+          required
+          pattern="{a-zA-Zа-яА-я}+$"
+          minlength="2"
+          placeholder="Name"
+        />
+      </div>
+      <div class="personal-info">
+        <label for="tel" class="modal-form-label"></label
+        ><input
+          type="tel"
+          name="phone"
+          id="tel"
+          class="modal-form-input"
+          required
+          pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+          title="xxx-xxx-xx-xx"
+          placeholder="Phone"
+        />
+      </div>
+      <div class="personal-info">
+        <label for="email" class="modal-form-label"></label
+        ><input
+          type="email"
+          name="email"
+          id="email"
+          class="modal-form-input"
+          placeholder="Email"
+        />
+      </div>
+      <div class="personal-info">
+        <label class="modal-form-label"></label
+        ><textarea
+          name="user_masage"
+          class="form-label-comment"
+          placeholder="Comment"
+        ></textarea>
+      </div>
+      <button type="submit" class="modal-submit-button">Submit</button>
+    </form>
+    <button type="submit" class="modal-close-btn" data-modal-close>
+      <svg class="modal-close-btn-icon">
+        <use href="./images/icons/sprite.svg#cross-icon"></use>
+      </svg>
+    </button>
+  </div>
+</div>
