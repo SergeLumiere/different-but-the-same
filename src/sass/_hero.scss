@@ -195,12 +195,22 @@
 
   .hero-2ndinfo-cont-text {
     width: 139px;
+    margin-bottom: 24px;
   }
 
   .hero-2ndinfo-text {
     font-size: 12px;
     line-height: 1.4;
     color: var(--light-txt-color);
+    margin-bottom: 24px;
+  }
+
+  .hero-arrow-link {
+    color: var(--light-txt-color);
+  }
+
+  .hero-arrow-svg {
+    fill: currentColor;
   }
 
   .hero-ice-cream-img {
