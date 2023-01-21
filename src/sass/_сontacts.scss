@@ -35,22 +35,18 @@
 // }
 
 .contacts-container {
-  position: relative;
-  top: -350px;
+  margin-top: -350px;
 }
 @media screen and (min-width: 768px) {
   .contacts-container {
-    position: relative;
-    top: -300px;
+    margin-top: -300px;
   }
 }
 @media screen and (min-width: 1200px) {
   .contacts-container {
-    position: relative;
-    top: -130px;
+    margin-top: -130px;
   }
 }
-
 .contacts-section {
   background-color: var(--dark-bg-color);
   padding-top: 60px;
