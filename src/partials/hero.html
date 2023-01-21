@@ -39,19 +39,41 @@
       </div>
      
     </div>
-    </div>
-    
   </div>
-
-    <img
-      class="hero-ice-cream-img"
-      srcset="
-        ./images/hero/ice-cream-desktop.png    1x,
-        ./images/hero/ice-cream-desktop@2x.png 2x
-      "
-      src="./images/hero/ice-cream-desktop.png"
-      alt="Main Ice Cream Image"
-      class="hero-ice-cream"
-    />
+  
+    <div class="hero-dots-icecream-wrapper">
+      <picture>
+        <source 
+          srcset="./images/hero/dots-desktop.png 1x, ./images/hero/dots-desktop@2x.png 2x" 
+          media="(min-width: 1200px)"
+          >
+        <source 
+          srcset="./images/hero/dots-tablet.png 1x, ./images/hero/dots-tablet.@2x-min.png 2x" 
+          media="(min-width: 768px)"
+          >
+        <source 
+          srcset="./images/hero/dots-mobile.png 1x, ./images/hero/dots-mobile@2x.png 2x " 
+          media="(min-width: 480px)">
+        <source 
+          srcset="./images/hero/dots-mobile320.png 1x, ./images/hero/dots-mobile320@2x.png 2x" 
+          media="(min-width: 320px)"
+          >
+        
+        <img 
+        class="hero-dots-img"
+        src="./images/hero/dots-mobile320.png" 
+        alt="dots"
+        >
+      </picture>
+      <img
+        class="hero-ice-cream-img"
+        srcset="
+          ./images/hero/ice-cream-desktop.png    1x,
+          ./images/hero/ice-cream-desktop@2x.png 2x
+        "
+        src="./images/hero/ice-cream-desktop.png"
+        alt="Main Ice Cream Image"
+      />
+    </div>
   </div>
 </section>
