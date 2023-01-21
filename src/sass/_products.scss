@@ -6,7 +6,7 @@
     max-width: 767px;
     margin: 0 auto;
 }
-.containerk {
+.container {
     margin: 0 auto;
     padding-left: 20px;
     padding-right: 20px;
@@ -162,7 +162,7 @@ label .products{
 
 // media
 @media screen and (min-width: 480px) {
-    .containerk{
+    .container{
         margin: 0 auto;
     }
     .products-ul li{
@@ -200,9 +200,7 @@ label .products{
     }
 }
 @media screen and (min-width: 768px) {
-    .containerk {
-        padding-left: 32px;
-        padding-right: 32px;
+    .container {
         margin: 0 auto;
     }
     .products{
@@ -256,18 +254,14 @@ label .products{
     }
 }
 @media screen and (min-width: 1200px) {
-    .containerk {
+    .container {
         margin: 0 auto;
-        padding-left: 16px;
-        padding-right: 16px;
     }
     .products{
         background-image: url(../images/background/background-desktop.jpg);
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
-        padding-left: 16px;
-        padding-right: 16px;
     }
     .products-ul{
         display: flex;
@@ -319,24 +313,23 @@ label .products{
 screen and (min-resolution: 192dpi),
 screen and (min-resolution: 2dppx),
 screen and (min-width: 320px) {
-    .products {background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-        url(../images/background/background-mobile@2x.jpg);
+    .products {
+        background-image: url(../images/background/background-mobile@2x.jpg);
         }
 }
 @media screen and (min-device-pixel-ratio: 2),
 screen and (min-resolution: 192dpi),
 screen and (min-resolution: 2dppx),
 screen and (min-width: 768px) {
-    .products {background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-        url(../images/background/background-tablet@2x.jpg);
+    .products {
+        background-image: url(../images/background/background-tablet@2x.jpg)
         }
 }
 @media screen and (min-device-pixel-ratio: 2),
 screen and (min-resolution: 192dpi),
 screen and (min-resolution: 2dppx),
 screen and (min-width: 1200px) {
-    .products {background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-        url(../images/background/background-desktop@2x.jpg);
+    .products {background-image: url(../images/background/background-desktop@2x.jpg);
         }
 }
 // media 2x
