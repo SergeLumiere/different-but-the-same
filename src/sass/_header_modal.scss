@@ -228,7 +228,7 @@ transition: background-color var(--transition-dur-and-func);
     position: absolute;
     width: 106px;
     height: 20px;
-    left: 17px;
+    left: 12px;
     bottom: 20px;
     font-family: var(--main-font);
     font-style: normal;
@@ -255,7 +255,6 @@ color: var(--dark-txt-color);
     background: rgba(248,210,78,.1);
     border: 1px solid var(--dark-bg-color);
     border-radius: 10px;
-    outline: rgba(0,0,0,0);
     padding-left: 8px;
     transition: border-color var(--transition-dur-and-func);
     margin-bottom: 12px;
@@ -303,15 +302,15 @@ color: var(--dark-txt-color);
 }
 
 
-.form__input {
-    width: 100%;
-    padding: 8px 12px;
-    background: rgba(248, 210, 78, 0.1);
-    border: 1px solid var(--dark-bg-color);
-    border-radius: 10px;
-    outline: transparent;
-    transition: border-color;
-}
+// .form__input {
+//     width: 100%;
+//     padding: 8px 12px;
+//     background: rgba(248, 210, 78, 0.1);
+//     border: 1px solid var(--dark-bg-color);
+//     border-radius: 10px;
+//     outline: transparent;
+//     transition: border-color;
+// }
 
 .form__input::placeholder{
     font-family: 'Montserrat';
@@ -350,7 +349,7 @@ color: var(--dark-txt-color);
     font-size: 12px;
     line-height: 1.25;
     
-  
+
     
 }
 
