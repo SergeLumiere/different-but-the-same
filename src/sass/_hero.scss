@@ -32,25 +32,34 @@
 
 /* MOBILE */
 @media screen and (min-width: 320px) {
-  .container {
-    width: 320px;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-
   .hero {
-    position: relative;
     background-color: var(--dark-bg-color);
-    padding-bottom: 243px;
+    height: 454px;
+
+    background-image: url(../images/hero/dots-mobile.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: 320px 50px;
   }
 
-  .hero-title-cont {
-    width: 247px;
-    margin-bottom: 32px;
-    padding-top: 99px;
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: url(../images/hero/dots-mobile320@2x.png);
+    }
+  }
+
+  .container.container-hero {
+    position: relative;
+    height: 454px;
+    padding-top: 50px;
+    padding-bottom: 0;
   }
 
   .hero-header {
+    width: 247px;
+    margin-bottom: 32px;
     font-family: 'Seymour One';
     font-weight: 400;
     font-size: 26px;
@@ -103,12 +112,6 @@
     display: none;
   }
 
-  .hero-dots-img {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-  }
-
   .hero-ice-cream-img {
     position: absolute;
     width: 177px;
@@ -118,16 +121,33 @@
 }
 
 /* ICE-CREAM */
+
 @media screen and (min-width: 480px) {
-  .container {
-    width: 480px;
+  .hero {
+    height: 357px;
+
+    background-image: url(../images/hero/dots-mobile.png);
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    background-size: 330px 52px;
   }
 
-  .hero {
-    padding-bottom: 150px;
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: url(../images/hero/dots-mobile@2x.png);
+    }
+  }
+
+  .container.container-hero {
+    height: 357px;
+    padding-top: 50px;
+    padding-bottom: 0;
   }
 
   .hero-ice-cream-img {
+    position: absolute;
     width: 218px;
     bottom: 0;
     right: 20px;
@@ -136,19 +156,38 @@
 
 /* TABLET */
 @media screen and (min-width: 768px) {
-  .container {
-    width: 768px;
-    padding-left: 32px;
-    padding-right: 32px;
+  .hero {
+    height: 349px;
+
+    background-image: url(../images/hero/dots-tablet.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: 768px 68px;
   }
 
-  .hero {
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: url(../images/hero/dots-tablet.@2x-min.png);
+    }
+  }
+
+  .container.container-hero {
+    position: relative;
+    height: 349px;
+    padding-top: 14px;
     padding-bottom: 12px;
   }
 
-  .hero-title-cont {
+  .hero-ice-cream-img {
+    width: 268px;
+    bottom: 0;
+    right: 92px;
+  }
+
+  .hero-header {
     margin-bottom: 24px;
-    padding-top: 80px;
   }
 
   .hero-button-list {
@@ -158,7 +197,7 @@
   .hero-info-cont {
     display: block;
     position: absolute;
-    top: 94px;
+    top: 28px;
     right: 32px;
   }
 
@@ -166,6 +205,10 @@
     font-size: 8px;
     color: var(--light-txt-color);
     text-align: right;
+  }
+
+  .hero-info-cont-wrap:not(:last-child) {
+    margin-bottom: 20px;
   }
 
   .hero-info-cont-number {
@@ -182,14 +225,7 @@
     column-gap: 32px;
   }
 
-  .hero-ice-cream-img {
-    bottom: 0;
-    right: 60px;
-  }
-
   .hero-plate-image {
-    position: relative;
-    z-index: 2;
     width: 152px;
   }
 
@@ -212,32 +248,37 @@
   .hero-arrow-svg {
     fill: currentColor;
   }
-
-  .hero-ice-cream-img {
-    position: absolute;
-    width: 268px;
-    bottom: 0;
-    right: 92px;
-  }
 }
 
 /* DESKTOP */
 @media screen and (min-width: 1200px) {
-  .container {
-    width: 1200px;
-    padding-left: 16px;
-    padding-right: 16px;
-  }
-
   .hero {
-    padding-bottom: 12px;
-    margin: 0;
+    height: 591px;
+
+    background-image: url(../images/hero/dots-desktop.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: 1200px 384px;
   }
 
-  .hero-title-cont {
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: url(../images/hero/dots-desktop@2x.png);
+    }
+  }
+
+  .container.container-hero {
+    position: relative;
+    height: 591px;
+    padding-top: 45px;
+    padding-bottom: 65px;
+  }
+
+  .hero-header {
     width: 367px;
     margin-bottom: 28px;
-    padding-top: 118px;
   }
 
   .hero-header {
@@ -257,7 +298,7 @@
   }
 
   .hero-info-cont {
-    top: 126px;
+    top: 56px;
     right: 16px;
   }
 
