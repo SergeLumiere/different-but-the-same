@@ -9,8 +9,13 @@
     padding-bottom: 50px;
     background-color: var(--dark-bg-color);
   }
+  .advantages-item {
+    width: 230px;
+    margin-right: auto;
+    margin-left: auto;
+  }
   .advantages-item:not(:last-child) {
-    margin-bottom: 94px;
+    margin-bottom: 28px;
   }
   .advantages-item.first-item::before {
     content: '';
@@ -81,7 +86,7 @@
     padding-bottom: 60px;
   }
   .advantages-item:not(:last-child) {
-    margin-bottom: 94px;
+    margin-bottom: 32px;
   }
 }
 
