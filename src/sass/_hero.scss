@@ -128,7 +128,6 @@
   }
 
   .hero-ice-cream-img {
-    position: absolute;
     width: 218px;
     bottom: 0;
     right: 20px;
@@ -183,8 +182,9 @@
     column-gap: 32px;
   }
 
-  .hero-2ndinfo-img {
-    border: 1px solid #000;
+  .hero-ice-cream-img {
+    bottom: 0;
+    right: 60px;
   }
 
   .hero-plate-image {
@@ -227,5 +227,64 @@
     width: 1200px;
     padding-left: 16px;
     padding-right: 16px;
+  }
+
+  .hero {
+    padding-bottom: 12px;
+    margin: 0;
+  }
+
+  .hero-title-cont {
+    width: 367px;
+    margin-bottom: 28px;
+    padding-top: 118px;
+  }
+
+  .hero-header {
+    font-size: 38px;
+  }
+
+  .hero-button-list {
+    margin-bottom: 42px;
+  }
+
+  .hero-link-products {
+    font-size: 14px;
+  }
+
+  .hero-link-how {
+    font-size: 14px;
+  }
+
+  .hero-info-cont {
+    top: 126px;
+    right: 16px;
+  }
+
+  .hero-info-cont-wrap {
+    font-size: 14px;
+  }
+
+  .hero-info-cont-number {
+    font-size: 46px;
+  }
+
+  .hero-plate-image {
+    width: 225px;
+  }
+
+  .hero-2ndinfo-cont-text {
+    width: 200px;
+    margin-bottom: 0;
+  }
+
+  .hero-2ndinfo-text {
+    font-size: 14px;
+  }
+
+  .hero-ice-cream-img {
+    width: 456px;
+    bottom: 0;
+    right: 92px;
   }
 }
