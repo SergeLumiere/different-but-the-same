@@ -2,7 +2,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 100;
+    z-index: 1000;
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.4);
@@ -79,7 +79,7 @@
 }
 
 .buy-now-modal_title {
-    margin-bottom: 83px;
+    margin-bottom: 78px;
     text-align: center;
     font-family: var(--secondary-font);
     font-style: normal;
@@ -139,9 +139,17 @@
     background-repeat: no-repeat;
 }
 
+// ---------------------ICE-CREAM------------------------
 .buy-now-modal__cream {
 border: 2px solid var(--modal-ingredients-color);
+transition: background-color var(--transition-dur-and-func);
 }
+
+.buy-now-modal__cream:hover {
+    border: 2px solid var(--modal-ingredients-color);
+    background-color: var(--modal-ingredients-color);
+
+    }
 .buy-now-modal__cream::before {
         background: linear-gradient(
         rgba(156, 190, 143, 0.7),
@@ -154,8 +162,13 @@ border: 2px solid var(--modal-ingredients-color);
 .buy-now-modal__cream::after {
     background-image: url(../images/modal-buy-now/ice-cream@2x.png);
 }
-
+// ------------------ICE-COFFEE-------------------------------
 .buy-now-modal__coffee {
+    border: 2px solid var(--product-second-color);
+    transition: background-color var(--transition-dur-and-func);
+}
+.buy-now-modal__coffee:hover {
+    border: 2px solid var(--product-second-color);
     background-color: var(--product-second-color);
 }
 .buy-now-modal__coffee::before {
@@ -171,9 +184,14 @@ border: 2px solid var(--modal-ingredients-color);
 .buy-now-modal__coffee::after {
         background-image: url(../images/modal-buy-now/ice-coffee@2x.png);
 }
-
+// -----------------MILKSHAKE--------------------------
 .buy-now-modal__milkshake {
     border: 2px solid var(--contacts-hover-txt-color);
+    transition: background-color var(--transition-dur-and-func);
+}
+.buy-now-modal__milkshake:hover {
+    border: 2px solid var(--contacts-hover-txt-color);
+    background-color: var(--contacts-hover-txt-color);
 }
 .buy-now-modal__milkshake::before {
     background: linear-gradient(
@@ -188,6 +206,7 @@ border: 2px solid var(--modal-ingredients-color);
 .buy-now-modal__milkshake::after {
     background-image: url(../images/modal-buy-now/milkshakes@2x.png);
 }
+// ------------------------------------------------------------
 @media screen and (min-width: 768px) {
 
     .buy-now-modal__cream::after{
@@ -219,15 +238,31 @@ border: 2px solid var(--modal-ingredients-color);
 color: var(--dark-txt-color);
 }
 
+@media screen and (min-width: 768px) {
+    .buy-now-modal_product-title {
+        left:12px;
+    }
+    
+}
+
 .form__input {
     width: 100%;
     background: rgba(248,210,78,.1);
     border: 1px solid var(--dark-bg-color);
     border-radius: 10px;
     outline: rgba(0,0,0,0);
-    padding: 8px 12px;
+    padding: 8px 10px;
     transition: border-color var(--transition-dur-and-func);
     margin-bottom: 12px;
+}
+
+.form__input::placeholder {
+    color: var(--dark-bg-color);
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.4;
 }
 
 @media screen and (min-width: 768px){
@@ -270,10 +305,14 @@ color: var(--dark-txt-color);
     transition: border-color;
 }
 
-.form__input::placeholder {
-    font-size: 12px;
+.form__input::placeholder{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
     line-height: 1.4;
     color: var(--dark-txt-color);
+    
 }
 .form__input:focus {
     border-color: var(--default-accent-color);
