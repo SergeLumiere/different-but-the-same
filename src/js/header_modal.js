@@ -12,4 +12,16 @@
         document.body.classList.toggle("modal-open")
         refs.modal.classList.toggle("is-hidden");
     }
-})();
+})(); 
+
+// $('.js-modal-open').click(function() {
+
+//     var modalName = $(this).attr('datam-modal');
+//     var modal = $('.js-header-modal[data-modal-header="'+ modalName +'"]');
+
+//     modal.addClass('is-show')
+// })
+
+// $('js-header-modal-close').click(function(){
+//     $(this).parent('.js-header-modal').removeClass('is-show')
+// })
