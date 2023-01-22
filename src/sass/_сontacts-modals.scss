@@ -443,10 +443,11 @@ margin-bottom: 32px;
     margin-bottom: 24px;
   }
 
-    .modal {
-      max-height: 60%;
-      max-width: 60%;
-      overflow:auto;
+   .modal {
+      height: 674px;
+      width: 280px;
+      overflow: auto;
+      padding: 28px;
   }
  
     .modal-title{
