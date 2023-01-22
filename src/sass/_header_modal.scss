@@ -340,8 +340,6 @@ color: var(--dark-txt-color);
 .form__textarea {
     height: 65px;
     resize: none;
-    height: 65px;
-    resize: none;
 }
 
 .form__btn {
@@ -351,22 +349,12 @@ color: var(--dark-txt-color);
     padding: 12px 34px;
     font-size: 12px;
     line-height: 1.25;
-    display: block;
-    margin-inline: auto;
-    border: none;
-    padding: 12px 34px;
-    font-size: 12px;
-    line-height: 1.25;
+    
+  
+    
 }
 
 .form__btn {
-    border: none;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 12px 34px;
-    font-size: 12px;
-    line-height: 1.25;
-    display: block;
     border: none;
     margin-left: auto;
     margin-right: auto;
@@ -377,7 +365,6 @@ color: var(--dark-txt-color);
 }
 
 .btn--fill {
-    background-color: var(--default-accent-color);
     background-color: var(--default-accent-color);
 }
 
@@ -397,26 +384,6 @@ color: var(--dark-txt-color);
     color: var(--dark-txt-color);
     border-radius: 10px;
     outline: rgba(0, 0, 0, 0);
-    font-size: 14px;
-    font-weight: 600;
-    line-height: 1.28;
-    transition: color var(--transition-dur-and-func),
-    background-color var(--transition-dur-and-func),
-    border-color var(--transition-dur-and-func);
-    height: 42px;
-    color: var(--dark-txt-color);
-    border-radius: 10px;
-    outline: rgba(0,0,0,0);
-    font-size: 14px;
-    font-weight: 600;
-    line-height: 1.28;
-    transition: color var(--transition-dur-and-func),background-color var(--transition-dur-and-func),border-color var(--transition-dur-and-func);
-}
-.btn {
-    height: 42px;
-    color: var(--dark-txt-color);
-    border-radius: 10px;
-    outline: rgba(0,0,0,0);
     font-size: 14px;
     font-weight: 600;
     line-height: 1.28;
