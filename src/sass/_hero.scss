@@ -28,8 +28,6 @@
   --transition-dur-and-func: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-// Общие стили
-
 /* MOBILE */
 @media screen and (min-width: 320px) {
   .hero {
@@ -82,26 +80,47 @@
     align-items: center;
   }
 
-  .hero-item-products {
-    padding: 11px 26px;
-    border: 2px solid var(--default-accent-color);
-    border-radius: 8px;
-    box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.25));
-  }
-
   .hero-link-products {
+    display: block;
+    padding: 11px 26px;
     color: #000;
     font-weight: 600;
     font-size: 12px;
     line-height: 1.25;
+    border: 2px solid var(--default-accent-color);
+    border-radius: 8px;
+  }
+
+  .hero-link-products:hover,
+  .hero-link-products:focus {
+    color: #000;
+    border: 2px solid var(--hover-accent-color);
+  }
+
+  .hero-link-products:disabled {
+    color: var(--disabled-accent-color);
   }
 
   .hero-link-how {
+    display: block;
+    padding: 0;
     color: var(--default-accent-color);
     font-weight: 600;
     font-size: 12px;
     line-height: 1.25;
     text-decoration: underline;
+  }
+
+  .hero-link-how:hover {
+    color: var(--hover-accent-color);
+  }
+
+  .hero-link-how:focus {
+    color: var(--light-txt-color);
+  }
+
+  .hero-link-how:disabled {
+    color: var(--disabled-accent-color);
   }
 
   .hero-info-cont {
@@ -157,8 +176,6 @@
 /* TABLET */
 @media screen and (min-width: 768px) {
   .hero {
-    height: 349px;
-
     background-image: url(../images/hero/dots-tablet.png);
     background-position: bottom;
     background-repeat: no-repeat;
@@ -175,7 +192,6 @@
 
   .container.container-hero {
     position: relative;
-    height: 349px;
     padding-top: 14px;
     padding-bottom: 12px;
   }
@@ -231,14 +247,13 @@
 
   .hero-2ndinfo-cont-text {
     width: 139px;
-    margin-bottom: 24px;
   }
 
   .hero-2ndinfo-text {
     font-size: 12px;
     line-height: 1.4;
     color: var(--light-txt-color);
-    margin-bottom: 24px;
+    margin-bottom: 12px;
   }
 
   .hero-arrow-link {
@@ -289,6 +304,15 @@
     margin-bottom: 42px;
   }
 
+  .hero-link-products:hover {
+    border: 2px solid var(--hover-accent-color);
+  }
+
+  .hero-link-products:focus {
+    color: var(--light-txt-color);
+    border: 2px solid var(--hover-accent-color);
+  }
+
   .hero-link-products {
     font-size: 14px;
   }
@@ -310,6 +334,10 @@
     font-size: 46px;
   }
 
+  .hero-2ndinfo-cont {
+    column-gap: 16px;
+  }
+
   .hero-plate-image {
     width: 225px;
   }
@@ -321,6 +349,7 @@
 
   .hero-2ndinfo-text {
     font-size: 14px;
+    margin-bottom: 24px;
   }
 
   .hero-ice-cream-img {
