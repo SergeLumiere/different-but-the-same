@@ -49,7 +49,9 @@ function windowLoad() {
     });
   }, options);
 
-  let sections = document.querySelectorAll('.advantages-item');
+  let sections = document.querySelectorAll(
+    '.advantages-item ,.hero-info-cont-wrap'
+  );
   if (sections.length) {
     sections.forEach(section => {
       observer.observe(section);
