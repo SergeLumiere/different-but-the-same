@@ -166,7 +166,7 @@ textarea::placeholder {
     border-radius: 10px;
   }
   .modal-close-btn-icon:hover{
-  // fill:#F8D24E;
+  fill:#F8D24E;
   }
 
   /* MODAl WINDOW 2*/
@@ -296,7 +296,7 @@ margin-bottom: 32px;
   
       .modal {
         max-height: 90%;
-        max-width: 90%;
+        // max-width: 90%;
         overflow:auto;
     }
    
@@ -369,8 +369,8 @@ margin-bottom: 32px;
   }
 
     .modal {
-      max-height: 80%;
-      max-width: 80%;
+      // max-height: 80%;
+      // max-width: 80%;
       overflow:auto;
   }
  
