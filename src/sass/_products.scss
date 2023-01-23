@@ -18,10 +18,15 @@
     padding-top: 61px;
     padding-bottom: 148px;
 }
+.products-button{
+    border: none;
+    background-color: transparent;
+    margin-bottom: 0;
+    height: 16px;
+}
 .arrow-svg{
     width: 40px;
     height: 16px;
-    margin-bottom: 16px;
 }
 .products-ul{
     display: flex;
@@ -408,7 +413,7 @@ label .products{
         width: 246px;
     }
     .products-ul button{
-        margin-bottom: 67px;
+        margin-bottom: 60px;
     }
     .milkshakes-h3{
         margin-top: 165px;
