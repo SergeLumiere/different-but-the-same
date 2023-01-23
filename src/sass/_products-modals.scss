@@ -12,7 +12,7 @@
   transition: 0.3s all;
 }
 
-.modal-products {
+.modal1{
   opacity: 0;
   visibility: hidden;
   position: fixed;
@@ -27,7 +27,7 @@
 }
 
 @media screen and (min-width: 320px) {
-  .modal-products {
+  .modal1 {
     padding: 28px 20px;
     width: 280px;
     height: 100%;
@@ -202,15 +202,49 @@
   .products-submit-modal-btn:disabled {
     background-color: #ababab;
   }
+  .ice-coffe .products-logo-background {
+    background: #EFD478;
+  }
+  .ice-coffe .products-grams-container {
+    background: #EFD478;
+    border: 2px solid #EFD478;
+    box-shadow: 0 6px 20px #EFD478;
+  }
+  .ice-coffe .products-gram-item {
+    border: 2px solid #EFD478;
+  }
+  .ice-coffe .products-input {
+    border: 1px solid #EFD478;
+  }
+  .ice-coffe .products-comment-place {
+    border: 1px solid #EFD478;
+  }
+  .milkshake .products-logo-background {
+    background: #D6936D;
+  }
+  .milkshake .products-grams-container {
+    background: #D6936D;
+    border: 2px solid #D6936D;
+    box-shadow: 0 6px 20px #D6936D;
+  }
+  .milkshake .products-gram-item {
+    border: 2px solid #D6936D;
+  }
+  .milkshake .products-input {
+    border: 1px solid #D6936D;
+  }
+  .milkshake .products-comment-place {
+    border: 1px solid #D6936D;
+  }
 }
 @media screen and (min-width: 480px) {
-  .modal-products {
+  .modal1 {
     width: 280px;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .modal-products {
+  .modal1 {
     width: 568px;
     padding: 32px 40px;
   }
@@ -256,7 +290,7 @@
   }
 }
 
-.modal-products.active,
+.modal1.active,
 .overlay.active {
   opacity: 1;
   visibility: visible;
