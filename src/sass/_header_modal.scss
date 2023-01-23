@@ -46,8 +46,10 @@
 
 @media screen and (min-width: 768px) {
     .buy-now-modal {
-        width: 568px;
-        height: 644px;
+        max-width: 568px;
+        max-height: 644px;
+        width: 95%;
+        height: 95%;
         padding: 32px 54px;
         position: absolute;
         top: 50%;
@@ -106,6 +108,7 @@
         flex-direction: row;
         gap: 32px;
         margin-bottom: 40px;
+        padding-top: 32px;
     }
 }
 .buy-now-modal__item {
