@@ -1,0 +1,272 @@
+.overlay {
+    opacity: 0;
+    visibility: hidden;
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    z-index: 20;
+    transition: .3s all;
+ }
+ 
+ .modal {
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 30;
+    background-color: #FCFCFC;
+    
+    border: 2px solid #F8D24E;
+    border-radius: 10px;
+ }
+ 
+ @media screen and (min-width:320px){
+    .modal {
+        padding: 28px 20px;
+        width: 280px;
+        height: 100%;
+        overflow-y: auto;
+    }
+    .products-modal-title {
+        font-family: 'Seymour One';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 1.4;
+        margin: 0 auto;
+        margin-bottom: 27px;
+        text-align: center;
+    }
+    .products-logo {
+        position: absolute;
+        bottom: 7px;
+    }
+    .products-logo-background {
+        position: relative;
+        width: 132px;
+        height: 132px;
+        border-radius: 50%;
+        background: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #D9D9D9;
+        box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
+        margin: 0 auto;
+    }
+    .products-gram-list {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        gap: 9px;
+        margin-top: 22px;
+    }
+    .products-gram-item {
+        box-sizing: border-box;
+        width: 53px;
+        height: 72px;
+        display: flex;
+        align-items:center;
+        flex-direction: column;
+        border: 2px solid #9CBE8F;
+        border-radius: 40px;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 10px;
+        line-height: 2.8;
+        text-align: center;
+        color: #131313;
+    }
+    .products-grams-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 43px;
+        height: 43px;
+        position: absolute;
+        background: #9CBE8F;
+        border: 2px solid #9CBE8F;
+        box-shadow: 0px 6px 20px rgba(10, 136, 23, 0.25);
+        border-radius: 50%;
+    }
+    .products-gram-item-span {
+        position: absolute;
+        bottom: 0;
+
+    }
+    .products-ingredients-title {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.4;
+        text-align: center;
+        color: #131313;
+        margin-top: 40px;
+        margin-bottom: 24px;
+    }
+    .products-ingredients-list {
+        display: flex;
+        flex-direction: column;
+        gap: 11px;
+        margin-bottom: 40px;
+    }
+    .products-ingredients-item {
+        display: flex;
+        justify-content: space-between;
+       
+    }
+    .products-ingredients-span {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.7;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.04em;
+        color: #131313;
+    }
+    .products-form {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        margin-bottom: 24px;
+    }
+    .products-input {
+        width: 100%;
+        background: rgba(248, 210, 78, 0.1);
+        border: 1px solid #84A178;
+        border-radius: 10px;
+        height: 42px;
+        padding-left: 10px;
+    }
+    .products-input::placeholder {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.4;
+        color: #131313;
+    }
+    .products-comment-place {
+        background: rgba(248, 210, 78, 0.1);
+        border: 1px solid #84A178;
+        border-radius: 10px;
+        height: 84px;
+        width: 100%;
+        padding-top: 11px;
+        padding-left: 10px;
+    }
+    .products-comment-place::placeholder {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.4;
+        color: #131313;
+    }
+    .products-submit-modal-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        width: 132px;
+        height: 42px;
+        background: #F8D24E;
+        border-radius: 10px;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 1.2;
+        text-align: center;
+        color: #131313;
+        transition: background-color var(--transition-dur-and-func),
+        color var(--transition-dur-and-func);
+    }
+    .products-submit-modal-btn:hover {
+        background-color: #0A8817;
+    }
+    .products-submit-modal-btn:focus {
+        color: #FFFFFF;
+        background-color: #0A8817;
+    }
+    .products-submit-modal-btn:disabled {
+        background-color: #ABABAB;
+    }
+ }
+ @media screen and (min-width:480px) {
+    .modal {
+        width: 280px;
+    }
+ }
+
+ @media screen and (min-width: 1200px){
+    .modal {
+        width: 568px;
+        padding: 32px 40px;
+    }
+    .products-modal-title {
+        margin-bottom: 24px;
+    }
+    .products-modal-title {
+        margin-top: 24px;
+    }
+    .products-gram-item {
+        width: 65px;
+        height: 90px;
+        font-size: 12px;
+    }
+    .products-grams-container {
+        width: 53px;
+        height: 53px;
+    }
+    .products-gram-item-span {
+        font-weight: 400;
+    }
+    .products-gram-list {
+        gap: 20px;
+        justify-content: center;
+        margin-top: 24px;
+    }
+    .products-ingredients-title {
+        margin-top: 48px;
+    }
+    .products-form {
+        align-items: center;
+        margin-bottom: 32px;
+    }
+    .products-input {
+        width: 368px;
+    }
+    .products-comment-place {
+        width: 368px;
+    }
+    .products-submit-modal-btn {
+        width: 121px;
+        height: 42px;
+    }
+ }
+ 
+ .modal.active,
+ .overlay.active{
+    opacity: 1;
+    visibility: visible;
+    overflow: auto;
+ }
+ .modal__cross {
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    fill: #444;
+    cursor: pointer;
+ }
+
+ 
