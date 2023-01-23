@@ -23,6 +23,7 @@
     background-color: transparent;
     margin-bottom: 0;
     height: 16px;
+    margin-bottom: 16px;
 }
 .arrow-svg{
     width: 40px;
@@ -144,9 +145,7 @@ label .products{
     background-color: transparent;
     border: none;
 }
-.products-ul button{
-    margin-bottom: 24px;
-}
+
 // buttons
 // before
 .ice-cream-li::before{
@@ -280,6 +279,9 @@ label .products{
     .products-ul li{
         width: 224px;
     }
+    .products-button{
+        margin-bottom: 12px;
+    }
     .ice-coffee-p {
         margin-top: 40px;
         margin-bottom: 58px;
@@ -304,9 +306,6 @@ label .products{
         margin-right: 26px;
         margin-left: 26px;
         width: 172px;
-    }
-    .products-ul button{
-        margin-bottom: 20px;
     }
     .milkshakes-h3{
         margin-top: 108px;
@@ -364,6 +363,9 @@ label .products{
         left: 34px;
         background-image: url(../images/products/ice-cream-desktop.png);
         // box-shadow: 0px 5.34219px 20.0332px rgba(10, 136, 23, 0.25);
+    }
+    .products-button{
+        margin-bottom: 60px;
     }
     .ice-coffee-li::before{
         background-image: url(../images/products/ice-coffee-desktop.png);
