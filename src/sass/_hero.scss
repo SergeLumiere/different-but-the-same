@@ -244,6 +244,7 @@
 
   .hero-2ndinfo-cont-text {
     width: 139px;
+    overflow: hidden;
   }
 
   .hero-2ndinfo-text {
@@ -251,6 +252,17 @@
     line-height: 1.4;
     color: var(--light-txt-color);
     margin-bottom: 12px;
+  }
+
+  #herotext {
+    transform: translate(-120%, 0);
+    opacity: 0;
+    transition: transform 1s ease-in-out;
+  }
+
+  #herotext.show {
+    transform: translate(0, 0);
+    opacity: 1;
   }
 
   .hero-arrow-link {
