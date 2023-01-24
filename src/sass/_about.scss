@@ -303,9 +303,9 @@
   width: 100%;
   height: 100%;
   z-index: 100;
- 
+
+  transform: opacity, visibility;
   transition: var(--transition-dur-and-func);
-  transform: scale(1);
   background-color: rgba(0, 0, 0, 0.4);
 }
 
@@ -313,7 +313,9 @@
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-  scale: 0;
+}
+.about-backdrop.is-hidden .about-modal {
+  transform: translate(-50%, -50%) scale(0.5);
 }
 .about-modal {
   position: absolute;
@@ -328,7 +330,9 @@
   border-radius: 10px;
   border: 2px solid var(--default-accent-color);
   background-color: var(--light-bg-color);
-  
+
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform var(--transition-dur-and-func);
 }
 
 .about-modal-btn-close {

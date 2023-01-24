@@ -7,8 +7,7 @@
   width: 100%;
   height: 100%;
   background-color: rgba(46, 47, 66, 0.4);
-  transition-duration: 250ms;
-  transition-timing-function: linear;
+  transition: var(--transition-dur-and-func);
   transform: opacity, visibility;
 }
 .backdrop.is-hidden {
@@ -32,7 +31,7 @@
   border: 2px solid #f8d24e;
   transform: translate(-50%, -50%) scale(1);
   padding: 32px 60px 32px 60px;
-  transition: transform 250ms linear;
+  transition: transform var(--transition-dur-and-func);
 }
 .modal-close-btn-icon {
   position: absolute;
@@ -182,17 +181,17 @@ textarea::placeholder {
   width: 100%;
   height: 100%;
   background-color: rgba(46, 47, 66, 0.4);
-  transition-duration: 250ms;
-  transition-timing-function: linear;
-  transform: scale(1);
+  transition: var(--transition-dur-and-func);
+  transform: opacity, visibility;
 }
 .backdrop_map.is-hidden {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-  scale: 0;
 }
-
+.backdrop_map.is-hidden .modal_map {
+  transform: translate(-50%, -50%) scale(0.5);
+}
 .modal_map {
   width: auto;
   height: auto;
@@ -204,13 +203,14 @@ textarea::placeholder {
   background-color: #fcfcfc;
   border-radius: 10px;
   border: 2px solid #f8d24e;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) scale(1);
   padding: 32px 60px;
   cursor: pointer;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  transition: transform var(--transition-dur-and-func);
 }
 .map {
   margin-bottom: 32px;
