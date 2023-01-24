@@ -1,7 +1,7 @@
 .customer-reviews {
   background-image: url(/src/images/background/background-mobile.jpg);
-  background-size: 100%, cover;
-  background-position: top 0 center;
+  background-size: cover;
+  background-position: center;
   padding-top: 178px;
   padding-bottom: 393px;
   border-top: 32px solid var(--dark-bg-color);
@@ -71,6 +71,13 @@
     padding-top: 235px;
     padding-bottom: 409px;
     border-top: 49px solid var(--dark-bg-color);
+  }
+  .review-text {
+    width: 440px;
+    font-size: 14px;
+  }
+  .swiper {
+    width: 480px;
   }
 }
 /* TABLET */

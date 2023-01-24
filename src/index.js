@@ -6,3 +6,5 @@ import './js/ice';
 import './js/slider';
 import './js/header_modal';
 import './js/arrow';
+import './js/back-btn';
+

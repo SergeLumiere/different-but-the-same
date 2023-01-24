@@ -149,7 +149,7 @@ html {
   line-height: 17px;
   text-align: center;
   border-radius: 10px;
-  transform: background-color var(--transition-dur-and-func),
+  transition: background-color var(--transition-dur-and-func),
     color var(--transition-dur-and-func);
 }
 
@@ -170,7 +170,7 @@ html {
 .header-button-icon {
   width: 6px;
   height: 10px;
-  fill: var(--dark-txt-color);
+  fill: currentColor;
 }
 
 .mobile-menu-footer {
@@ -223,7 +223,7 @@ html {
     line-height: 17px;
     text-align: center;
     border-radius: 10px;
-    transform: background-color var(--transition-dur-and-func),
+    transition: background-color var(--transition-dur-and-func),
       color var(--transition-dur-and-func);
   }
 
