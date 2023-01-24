@@ -149,7 +149,7 @@ html {
   line-height: 17px;
   text-align: center;
   border-radius: 10px;
-  transform: background-color var(--transition-dur-and-func),
+  transition: background-color var(--transition-dur-and-func),
     color var(--transition-dur-and-func);
 }
 
@@ -223,7 +223,7 @@ html {
     line-height: 17px;
     text-align: center;
     border-radius: 10px;
-    transform: background-color var(--transition-dur-and-func),
+    transition: background-color var(--transition-dur-and-func),
       color var(--transition-dur-and-func);
   }
 
