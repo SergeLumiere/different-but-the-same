@@ -1,5 +1,5 @@
 <header class="header">
-  <div class="container header-container">
+  <div class="container header-container animate__animated animate__fadeInDown">
     <a href="./index.html" class="header-logo">
       <svg class="header-icon">
         <use href="./images/icons/sprite.svg#icon-logo"></use>
@@ -34,7 +34,7 @@
         </li>
       </ul>
     </nav>
-    <button type="button" class="header-button" header-modal-open>
+    <button type="button" class="header-button" data-header-modal-open>
       Buy now
       <svg class="header-button-icon">
         <use href="./images/icons/sprite.svg#icon-sign"></use>
@@ -58,24 +58,28 @@
       </div>
       <ul class="mobile-menu-nav">
         <li class="mobile-menu-navigation-item">
-          <a href="#hero" class="mobile-menu-navigation-link">Home</a>
+          <a href="#hero" class="mobile-menu-navigation-link js-link">Home</a>
         </li>
         <li class="mobile-menu-navigation-item">
-          <a href="#about-how-its-made" class="mobile-menu-navigation-link"
+          <a
+            href="#about-how-its-made"
+            class="mobile-menu-navigation-link js-link-second"
             >How it’s made?</a
           >
         </li>
         <li class="mobile-menu-navigation-item">
-          <a href="#products" class="mobile-menu-navigation-link"
+          <a href="#products" class="mobile-menu-navigation-link js-link-third"
             >Our products</a
           >
         </li>
         <li class="mobile-menu-navigation-item">
-          <a href="#contacts" class="mobile-menu-navigation-link">Contact</a>
+          <a href="#contacts" class="mobile-menu-navigation-link js-link-fourth"
+            >Contact</a
+          >
         </li>
       </ul>
       <div class="mobile-menu-footer">
-        <button type="button" class="mobile-menu-button" header-modal-open>
+        <button type="button" class="mobile-menu-button" data-header-modal-open>
           Buy now
           <svg class="header-button-icon">
             <use href="./images/icons/sprite.svg#icon-sign"></use>

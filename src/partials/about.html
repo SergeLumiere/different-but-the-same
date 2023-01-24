@@ -31,10 +31,10 @@
               />
 
               <img
-                class="about-img"
+               
                 src="./images/about/cow-mobile.png"
                 alt="Сow on the field"
-                class="about-img"
+               
               />
             </picture>
           </div>
@@ -64,8 +64,10 @@
           </li>
         </ul>
         <div class="about-wrapper-btn">
-          <button class="about-read-more-btn" type="button" about-data-modal-open>
-            Read more <span class="about-btn-mnemonic">&#8250;</span>
+          <button class="about-read-more-btn" type="button" data-about-modal-open>
+            Read more <svg class="contacts-btn-icon" height="12" width="12">
+            <use href="./images/icons/sprite.svg#icon-sign"></use>
+          </svg>
           </button>
         </div>
       </div>
@@ -73,9 +75,9 @@
 
     <!--======================================================= MODAL============================================================= -->
 
-    <div class="about-backdrop is-hidden" about-data-modal>
+    <div class="about-backdrop is-hidden" data-about-modal>
       <div class="about-modal container">
-        <button type="button" class="about-modal-btn-close" about-data-modal-close>
+        <button type="button" class="about-modal-btn-close" data-about-modal-close>
           <svg class="icon-modal-close" width="16" height="16">
             <use href="./images/icons/sprite.svg#icon-cross"></use>
           </svg>
@@ -83,12 +85,10 @@
 
         <h2 class="about-modul-title">How it’s made?</h2>
 <div class="about-iframe-wrapper">
-<iframe
-        width="100%"
-        height="100%"
+<iframe class="iframe-about"
+        
           src="https://www.youtube.com/embed/2P_avDlig-U"
-          title="YouTube video player"
-          frameborder="0"
+          title="How it’s made?"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowfullscreen
         ></iframe>

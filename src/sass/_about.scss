@@ -1,5 +1,3 @@
-
-
 .about {
   background-color: var(--dark-bg-color);
 }
@@ -34,6 +32,11 @@
 .about-read-more-btn:focus {
   background-color: #0a8817;
   color: var(--light-txt-color);
+}
+
+.about-read-more-btn:disabled {
+  background-color: var(--disabled-accent-color);
+  color: var(--dark-txt-color);
 }
 
 .about-btn-mnemonic {
@@ -80,7 +83,6 @@
 @media screen and (max-width: 767px) {
   .about {
     padding-top: 60px;
-   
   }
 
   .about-label {
@@ -172,7 +174,6 @@
 @media screen and (min-width: 768px) {
   .about {
     padding-top: 60px;
-    
   }
 
   .about-wrapper {
@@ -240,8 +241,6 @@
     height: 330px;
   }
 
-  
-
   .about-wrapper-picture {
     position: absolute;
     top: 26px;
@@ -304,14 +303,17 @@
   width: 100%;
   height: 100%;
   z-index: 100;
-
-  background-color: rgba(129, 124, 124, 0.7);
+ 
+  transition: var(--transition-dur-and-func);
+  transform: scale(1);
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 .about-backdrop.is-hidden {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+  scale: 0;
 }
 .about-modal {
   position: absolute;
@@ -322,12 +324,11 @@
 
   width: 568px;
   height: 449px;
-  border-radius: 10px;
-  border: 1px solid var(--default-accent-color);
 
+  border-radius: 10px;
+  border: 2px solid var(--default-accent-color);
   background-color: var(--light-bg-color);
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
+  
 }
 
 .about-modal-btn-close {
@@ -339,7 +340,14 @@
   border: none;
   padding: 0;
   line-height: 0;
+  transition: fill var(--transition-dur-and-func);
 }
+
+.about-modal-btn-close:hover,
+.about-modal-btn-close:focus {
+  fill: var(--default-accent-color);
+}
+
 .about-modul-title {
   font-family: var(--secondary-font);
   font-style: normal;
@@ -375,6 +383,10 @@
   overflow: hidden;
 }
 
+.iframe-about {
+  width: 100%;
+  height: 100%;
+}
 
 // ==========================================ABOUT-MOBILE===============================================
 
@@ -394,25 +406,23 @@
   }
 
   .about-iframe-wrapper {
-  width: 224px;
-  height: 199px;
+    width: 224px;
+    height: 199px;
+  }
+
+  .about-modul-text {
+    max-width: 224px;
+    height: auto;
+    margin-top: 20px;
+
+    font-size: 14px;
+    line-height: 1.4;
+  }
 }
 
-.about-modul-text {
-  max-width: 224px;
-  height: auto;
-  margin-top: 20px;
-
- 
-  font-size: 14px;
-  line-height: 1.4;
-}
-}
-
-@media screen and (max-width:320px ) {
-  .about-modal{
+@media screen and (max-width: 320px) {
+  .about-modal {
     width: 90%;
     height: auto;
   }
-  
 }
