@@ -105,7 +105,7 @@ label{
     text-align: center;
     color: var(--dark-txt-color);
 }
-label .products{
+.h2products{
     font-family: 'Seymour One', sans-serif;
     font-size: 30px;
     font-weight: 400;
@@ -113,6 +113,7 @@ label .products{
     letter-spacing: 0.04em;
     text-align: center;
     color: var(--dark-txt-color);
+    text-transform: uppercase;
 }
 // fonts
 .ice-cream-li {
@@ -289,6 +290,10 @@ label .products{
         margin-left: 26px;
         width: 172px;
     }
+    .h2products{
+        font-size: 34px;
+        line-height: 1.2;
+    }
     .arrow-svg{
         margin-bottom: 12px;
     }
@@ -354,6 +359,10 @@ label .products{
     .arrow-svg{
         margin-bottom: 60px;
     }
+    .h2products{
+        font-size: 36px;
+        line-height: 1.24;
+    }
     .ice-cream-li::before{
         content: '';
         width: 302px;
@@ -362,7 +371,6 @@ label .products{
         top: -183px;
         left: 34px;
         background-image: url(../images/products/ice-cream-desktop.png);
-        // box-shadow: 0px 5.34219px 20.0332px rgba(10, 136, 23, 0.25);
     }
     .products-button{
         margin-bottom: 60px;
