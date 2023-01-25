@@ -9,19 +9,47 @@
         <use href="/src/images/icons/sprite.svg#icon-cross"></use>
       </svg>
     </button>
-    <p class="buy-now-modal_title">Buy now</p>
-    <ul class="buy-now-modal_list">
-      <li class="buy-now-modal__item buy-now-modal__cream">
-        <p class="buy-now-modal_product-title">ice cream</p>
-      </li>
-      <li class="buy-now-modal__item buy-now-modal__coffee">
-        <p class="buy-now-modal_product-title">ice coffee</p>
-      </li>
-      <li class="buy-now-modal__item buy-now-modal__milkshake">
-        <p class="buy-now-modal_product-title">milkshake</p>
-      </li>
-    </ul>
+
     <form class="buy-now-modal__form form">
+      <p class="buy-now-modal_title">Buy now</p>
+      <ul class="buy-now-modal_list">
+        <li class="buy-now-modal__item">
+          <label class="buy-now-modal_product-title"
+            ><input
+              class="buy-now-modal_product-input"
+              type="checkbox"
+              value="1"
+              name="ice cream"
+            /><span class="buy-now-modal__variant buy-now-modal__cream"
+              >ice cream</span
+            ></label
+          >
+        </li>
+        <li class="buy-now-modal__item">
+          <label class="buy-now-modal_product-title"
+            ><input
+              class="buy-now-modal_product-input"
+              type="checkbox"
+              value="2"
+              name="ice coffee"
+            /><span class="buy-now-modal__variant buy-now-modal__coffee"
+              >ice coffee</span
+            ></label
+          >
+        </li>
+        <li class="buy-now-modal__item">
+          <label class="buy-now-modal_product-title"
+            ><input
+              class="buy-now-modal_product-input"
+              type="checkbox"
+              value="3"
+              name="milkshake"
+            /><span class="buy-now-modal__variant buy-now-modal__milkshake"
+              >milkshake</span
+            ></label
+          >
+        </li>
+      </ul>
       <label class="form__label">
         <input
           class="form__input"
