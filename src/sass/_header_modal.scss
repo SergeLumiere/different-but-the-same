@@ -42,6 +42,8 @@
     opacity var(--transition-dur-and-func);
   position: relative;
   overflow: auto;
+  -webkit-overflow-scrolling: touch;
+
   transition: transform var(--transition-dur-and-func);
 }
 
