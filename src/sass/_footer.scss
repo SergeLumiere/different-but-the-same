@@ -40,7 +40,7 @@
 .end-social-list .icon:hover,
 .end-social-list .icon:focus {
   fill: var(--light-txt-color);
-  transition: color var(--transition-dur-and-func);
+  transition: fill var(--transition-dur-and-func);
 }
 
 .end-social-list {
